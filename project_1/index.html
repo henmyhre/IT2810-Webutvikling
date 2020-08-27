@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <title>IT2810 prosjekt 1</title>
+</head>
+
+<body>
+  <h1>IT2810 Webutvikling - Prosjekt 1</h1>
+  <h3>Kunstner: Trond Aalberg</h3>
+  <div class="container">
+    <div>
+      <h2>SVG</h2>
+      <svg width="500" height="500">
+        <circle cx="250" cy="250" r="200" stroke="black" stroke-width="3" fill="yellow" />
+        <circle cx="190" cy="200" r="20" />
+        <circle cx="310" cy="200" r="20" />
+        <rect x="170" y="170" width="40" height="5" />
+        <rect x="290" y="170" width="40" height="5" />
+        <path d="M175,300 a50,50 0 0,0 150,0" />
+        <rect x="230" y="301" width="17" height="25" fill="white" stroke-width="2" />
+        <rect x="250" y="301" width="20" height="35" fill="white" stroke-width="2" />
+      </svg>
+    </div>
+    <div>
+      <h2>Canvas</h2>
+      <div id="canvasBorder">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      <div class="textBox">
+        <h5>CSS flexbox</h5>
+        <p>Jeg har brukt CSS-flexbox for å plassere de to kunstverkene i forhold til hverandre, og for å opprettholde en
+          god struktur på websiden. Jeg bruker også flex-wrap for å wrap'e kunstverkene til en ny linje dersom skjermen
+          blir for smal,
+          dermed vil det se bedre ut på mobil f.eks. Jeg brukte ikke CSS Grid, ettersom man kunne velge mllom flexbox
+          og/eller grid. Man bruker CSS
+          Flexbox fordi det gjør det enklere å designe fleksible og responsive nettsider.</p>
+      </div>
+      <div class="textBox">
+        <h5>SVG og Canvas</h5>
+        <p>Jeg har brukt SVG og HTML5 Canvas samt Canvas API'et for å tegne min abstrakte kunst og gjøre denne
+          interaktiv.
+          Jeg har lært om hvilke begrensninger som finnes på begge måtene. Jeg har brukt en nestet for løkke for å
+          generere de små
+          firkantentene, samt hentet ut tilfeldige farger fra en array av fargekoder.</p>
+      </div>
+      <div class="textBox">
+        <h5>jQuery</h5>
+        <p>Jeg har brukt jQuery til å oppdage når musen holdes over kunstverket, og oppdage eventuelle
+          museknapptrykk.
+          Jeg
+          har også brukt jQuery til å endre på kunstverket ettersom det blir interagert med. Jeg bruker også jQuery til
+          å
+          vise/skjule
+          denne dokumentasjonen når du trykker på knappen</p>
+      </div>
+      <div class="textBox">
+        <h5>Testing i andre nettlesere</h5>
+        <p>Jeg har testet nettsiden i følgende nettlesere. All funksjonalitet ser ut til å fungere som ønsket.:</p>
+        <ul>
+          <li>Google Chrome</li>
+          <li>Microsoft Edge</li>
+          <li>Safari</li>
+          <li>Opera</li>
+          <li>Internet Explorer</li>
+        </ul>
+      </div>
+      <div class="textBox">
+        <h5>Informasjonskilder</h5>
+        <ul>
+          <li><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
+          <li><a href="https://forum.jquery.com/">https://forum.jquery.com/</a></li>
+          <li><a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API</a>
+          </li>
+          <li><a
+              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
