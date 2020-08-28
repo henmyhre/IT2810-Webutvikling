@@ -162,12 +162,12 @@ $(document).ready(() => {
     rotateSvgRightEyebrow(e.target)
   });
 
-  $("#canvasBox").mouseenter((e) => {
-    e.target.style.backgroundColor = "rgb(40, 40, 40)";
+  $("#canvasBox").mouseenter(function () {
+    this.style.backgroundColor = "rgb(40, 40, 40)";
   });
 
-  $("#canvasBox").mouseleave((e) => {
-    $(e.target).removeAttr("style")
+  $("#canvasBox").mouseleave(function () {
+    $(this).removeAttr("style")
   });
 
   $("#svg").mouseenter((e) => {
