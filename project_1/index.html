@@ -10,23 +10,33 @@
 <body>
   <h1>IT2810 Webutvikling - Prosjekt 1</h1>
   <h3>Kunstner: Trond Aalberg</h3>
+  <p id="artistInfo">Trond Aalberg er førsteamanuensis på NTNU og tilhøerer instituttet for datateknologi og
+    informatikk. Ved første øyekast ser han nokså uskyldig og snill ut, men Aalberg har flere sider enn de han viser på
+    NTNU. I disse avslørende kunstverkene prøver han å gi uttrykk for nettopp denne splittede personligheten. Ved å
+    klikke på kunstverkene vil man kunne se Aalberg slik han er utenfor NTNUs åpningstider. Bildet til venstre har
+    til hensikt å representere det noen mener er Aalbergs fysiske og mentale helse etterhvert som hans handlinger på
+    bildet til høyre
+    setter sitt preg og han går over til sterkere stoffer. Disse postmodernistiske kunstverkene får oss til å spørre oss
+    selv: Hvem er egentlig Aalberg? Er
+    han en mentalt forstyrret mann uten tenner, en rolig og kul deltidsrøyker, eller
+    en snill førsteamanuensis?</p>
   <div class="container">
     <div>
       <h2>SVG</h2>
-      <svg width="500" height="500">
-        <circle cx="250" cy="250" r="200" stroke="black" stroke-width="3" fill="yellow" />
-        <circle cx="190" cy="200" r="20" />
-        <circle cx="310" cy="200" r="20" />
-        <rect x="170" y="170" width="40" height="5" />
+      <svg id="svg" width="500" height="500">
+        <circle id="svgFace" cx="250" cy="250" r="200" stroke="black" stroke-width="3" fill="yellow" />
+        <circle class="svgEye" cx="190" cy="200" r="20" />
+        <circle class="svgEye" cx="310" cy="200" r="20" />
+        <rect id="svgRightEyebrow" x="170" y="170" width="40" height="5" />
         <rect x="290" y="170" width="40" height="5" />
         <path d="M175,300 a50,50 0 0,0 150,0" />
-        <rect x="230" y="301" width="17" height="25" fill="white" stroke-width="2" />
-        <rect x="250" y="301" width="20" height="35" fill="white" stroke-width="2" />
+        <rect class="svgTooth" x="230" y="301" width="17" height="25" fill="white" stroke-width="2" />
+        <rect class="svgTooth" x="250" y="301" width="20" height="35" fill="white" stroke-width="2" />
       </svg>
     </div>
     <div>
       <h2>Canvas</h2>
-      <div id="canvasBorder">
+      <div id="canvasBox">
         <canvas id="canvas"></canvas>
       </div>
     </div>
@@ -58,7 +68,9 @@
         <h4>jQuery</h4>
         <p>Jeg brukte jQuery for å oppdage om musepekerens posisjon glir over et av kunstverkene, og for å oppdage
           museklikk på kunstverkene. Dette utløser endringer på kunstverkene avhengig av hvilken handling som ble
-          utført. For eksempel fører klikk på en av SVG-kunstverdets tenner til at de faller av.</p>
+          utført. For eksempel fører klikk på en av SVG-kunstverdets tenner til at de faller av. Jeg brukte også jQuery
+          for å endre på attributter til SVG-elementer, som endring av øyestørrelse og rotasjon av øyebryn ved klikk.
+        </p>
       </div>
       <div class="textBox">
         <h4>Testing</h4>
@@ -81,7 +93,7 @@
         <p>Jeg har benyttet meg av følgende kilder under produksjonen av nettisden: </p>
         <ul>
           <li>Canvas: <a
-              href="https://www.youtube.com/watch?v=EO6OkltgudE">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
+              href="https://www.youtube.com/watch?v=EO6OkltgudE">https://www.youtube.com/watch?v=EO6OkltgudE</a>
           </li>
           <li>SVG: <a
               href="https://www.w3schools.com/graphics/svg_intro.asp">https://www.w3schools.com/graphics/svg_intro.asp</a>
@@ -93,7 +105,7 @@
           <li>CSS Grid: <a
               href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>
           </li>
-          <li>Tips og inspirasjon: <a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
+          <li>Tips og spørsmål: <a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
         </ul>
         <p>Jeg brukte for det meste kjente nettsider for å lære om temaene, bortsett fra en youtube-spilleliste for å
           lære om Canvas. Her så jeg på de to-tre første videoene, og supplementerte med StackOverflow de gangene det
