@@ -61,13 +61,18 @@
         <div class="textBox">
           <h4>Flexbox</h4>
           <p>Jeg valgte å bruke Flexbox-layout istedenfor CSS-Grid. Flexbox gjør det lett for nettsiden å være
-            responsiv på enhver skjermstørrelse, noe jeg ønsket at nettsiden min skulle være. På mindre enheter vil
+            responsiv på enhver skjermstørrelse, noe jeg ønsket at nettsiden min skulle være. CSS-Grid er generelt mer
+            statisk når det kommer til variasjon av størrelser.
+          </p>
+          <p>På mindre enheter vil
             elementer i en flexbox tilpasse seg ved å legge seg
-            under hverandre dersom det ikke lenger er plass i bredden. I tillegg vil elementenes størrelse kunne variere
-            avhengig av ledig plass. CSS-Grid er noe mer statisk når det kommer til variasjon av størrelser. Jeg har
+            under hverandre dersom det ikke lenger er plass i bredden. </p>
+          <p>I tillegg vil elementenes størrelse kunne variere
+            avhengig av ledig plass. Jeg har
             brukt flexbox både for å plassere
-            kunstverkene, og boksene med dokumentasjon. Størrelsevariasjonen hos elementer i en flexbox utnyttes kun i
-            boksene med dokumentasjon. Kunstverkene har en fast størrelse.
+            kunstverkene, og boksene med dokumentasjon. Størrelsevariasjonen hos elementer i en flexbox utnyttes i
+            boksene med dokumentasjon. Størrelsen til boksene som pakker inn kunstverkene og tilhørende tekst varierer
+            også i størrelse, noe som i hovedsak påvirker bildetekstens bredde. Kunstverkene har en fast størrelse.
           </p>
         </div>
         <div class="textBox">
@@ -76,14 +81,16 @@
             inn
             i HTML-dokumentet, men det er også lagt til et element (pipe) i main.js ved museklikk på hodet. Hele
             Canvas-tegningen blir tegnet i main.js.
-            Her har jeg prøvd å dekomponere for å gjenbruke så mange om mulig komponenter. Det lettere å respondere på
+            Her har jeg prøvd å dekomponere for å gjenbruke så mange om mulig komponenter.</p>
+          <p> Det lettere å respondere på
             spesifikke
             handlinger - som click på en figur - med SVG enn med Canvas. Derfor er også interaktiviteten bedre tilpasset
             på kunstverket som benytter seg av SVG. På Canvas-kunstverket er interaktiviteten kun basert på museklikk og
             hover innenfor hele kunstverket. Jeg kunne ha funnet musens posisjon ved klikk for å gjøre
             Canvas-kunstverket likere
             SVG-kunstverket, men jeg følte at kunstverkenes nåværende tilstand godt illustrer det jeg oppfatter som
-            hovedforskjellen mellom SVG og Canvas med tanke på dynamikk og mulighet for spesifikke handlinger. I
+            hovedforskjellen mellom SVG og Canvas med tanke på dynamikk og mulighet for spesifikke handlinger. </p>
+          <p>I
             Canvas-kunstverket blir tegningen overskrevet
             for hver endring, mens SVG-elementene endres individuelt i SVG-kunstverket.</p>
         </div>
@@ -103,6 +110,8 @@
             med elem.style.xxx enn å legge til lange strenger til style-attributtet. Jeg tenkte også at slike lange
             strenger
             åpner for flere programmeringsfeil fordi koden blir vanskeligere å lese.
+          </p>
+          <p> Knappen for å vise og skjule dokumentasjon bruker også jQuery.
           </p>
         </div>
         <div class="textBox">

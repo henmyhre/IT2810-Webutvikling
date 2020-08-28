@@ -150,32 +150,32 @@ $(document).ready(() => {
     }
   });
 
-  $(".svgTooth").click(function () {
-    $(this).fadeOut().delay(3000).fadeIn()
+  $(".svgTooth").click((e) => {
+    $(e.target).fadeOut().delay(3000).fadeIn()
   });
 
-  $(".svgEye").click(function () {
-    changeSvgEyeSize(this)
+  $(".svgEye").click((e) => {
+    changeSvgEyeSize(e.target)
   });
 
-  $("#svgRightEyebrow").click(function () {
-    rotateSvgRightEyebrow(this)
+  $("#svgRightEyebrow").click((e) => {
+    rotateSvgRightEyebrow(e.target)
   });
 
-  $("#canvasBox").mouseenter(function () {
-    this.style.backgroundColor = "rgb(40, 40, 40)";
+  $("#canvasBox").mouseenter((e) => {
+    e.target.style.backgroundColor = "rgb(40, 40, 40)";
   });
 
-  $("#canvasBox").mouseleave(function () {
-    $(this).removeAttr("style")
+  $("#canvasBox").mouseleave((e) => {
+    $(e.target).removeAttr("style")
   });
 
-  $("#svg").mouseenter(function () {
-    this.style.backgroundColor = "rgb(40, 40, 40)";
+  $("#svg").mouseenter((e) => {
+    e.target.style.backgroundColor = "rgb(40, 40, 40)";
   });
 
-  $("#svg").mouseleave(function () {
-    $(this).removeAttr("style")
+  $("#svg").mouseleave((e) => {
+    $(e.target).removeAttr("style")
   });
 
   $("#svgFace").click(() => {
