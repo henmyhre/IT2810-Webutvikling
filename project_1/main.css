@@ -43,10 +43,17 @@ h4, h5 {
   cursor: pointer;
 }
 
-#artInfo {
+#artistInfo {
   text-align: center;
   color: rgb(238, 238, 238);
   margin: 20px 100px 5px 100px;
+  text-shadow: 1px 1.2px rgba(60, 60, 60, 0.8);
+}
+
+#imgText {
+  text-align: center;
+  color: rgb(238, 238, 238);
+  margin: 5px 60px 5px 60px;
   text-shadow: 1px 1.2px rgba(60, 60, 60, 0.8);
 }
 
