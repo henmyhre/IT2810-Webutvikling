@@ -65,7 +65,7 @@ svg {
   cursor: pointer;
 }
 
-.container {
+.flexContainer {
   margin: 20px 100px 40px 100px;
   display: flex;
   flex-direction: row;
@@ -73,7 +73,7 @@ svg {
   justify-content: space-around;
 }
 
-.container > div {
+.flexContainer > div {
   flex: 1 1 400px;
 }
 
