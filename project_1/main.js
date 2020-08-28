@@ -139,6 +139,10 @@ const addSvgPipe = () => {
 
 //events
 $(document).ready(() => {
+  $("#button").click(() => {
+    $("#documentation").slideToggle();
+  })
+
   $("#canvas").click(() => {
     if (!canvasGlassesActive) {
       drawCanvasWithAnimation(canvasGlassesStartY)

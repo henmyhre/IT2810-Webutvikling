@@ -13,16 +13,22 @@
   <p id="artistInfo">Trond Aalberg er førsteamanuensis på NTNU og tilhøerer instituttet for datateknologi og
     informatikk. Ved første øyekast ser han nokså uskyldig og snill ut, men Aalberg har flere sider enn de han viser på
     NTNU. I disse avslørende kunstverkene prøver han å gi uttrykk for nettopp denne splittede personligheten. Ved å
-    klikke på kunstverkene vil man kunne se Aalberg slik han er utenfor NTNUs åpningstider. Bildet til venstre har
+    klikke på kunstverkene vil man kunne se Aalberg slik han er utenfor NTNUs åpningstider. Bildet til høyre har
     til hensikt å representere det noen mener er Aalbergs fysiske og mentale helse etterhvert som hans handlinger på
-    bildet til høyre
+    bildet til venstre
     setter sitt preg og han går over til sterkere stoffer. Disse postmodernistiske kunstverkene får oss til å spørre oss
     selv: Hvem er egentlig Aalberg? Er
     han en mentalt forstyrret mann uten tenner, en rolig og kul deltidsrøyker, eller
     en snill førsteamanuensis?</p>
   <div class="container">
     <div>
-      <h2>SVG</h2>
+      <h2>Realberg (Canvas)</h2>
+      <div id="canvasBox">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <div>
+      <h2>Badberg (SVG)</h2>
       <svg id="svg" width="500" height="500">
         <circle id="svgFace" cx="250" cy="250" r="200" stroke="black" stroke-width="3" fill="yellow" />
         <circle class="svgEye" cx="190" cy="200" r="20" />
@@ -34,85 +40,88 @@
         <rect class="svgTooth" x="250" y="301" width="20" height="35" fill="white" stroke-width="2" />
       </svg>
     </div>
-    <div>
-      <h2>Canvas</h2>
-      <div id="canvasBox">
-        <canvas id="canvas"></canvas>
-      </div>
-    </div>
   </div>
   <div>
-    <div class="container">
-      <div class="textBox">
-        <h4>Flexbox</h4>
-        <p>Jeg valgte å bruke Flexbox-layout istedenfor CSS-Grid. Flexbox gjør det lett for nettsiden å være
-          responsiv på enhver skjermstørrelse. På mindre enheter vil elementer i en flexbox
-          tilpasse seg ved å legge seg
-          under hverandre dersom det ikke lenger er plass i bredden. I tillegg vil elementenes størrelse kunne variere
-          avhengig av ledig plass. CSS-Grid er noe mer statisk når det kommer til variasjon av boksstørrelse. Jeg har
-          brukt flexbox både for å plassere
-          kunstverkene, og boksene med dokumentasjon. Størrelsevariasjonen utnyttes kun i boksene med dokumentasjon.</p>
-      </div>
-      <div class="textBox">
-        <h4>SVG og Canvas</h4>
-        <p>Jeg har brukt SVG og HTML5 Canvas for å tegne den interaktive kunsten. SVG er for det meste skrevet rett inn
-          i HTML-dokumentet, mens hele Canvas-tegningen blir tegnet i main. Det lettere å respondere på spesifikke
-          handlinger - som click på en figur - med SVG enn med Canvas. Derfor er også interaktiviteten bedre tilpasset
-          på kunstverket som benytter seg av SVG. På Canvas-kunstverket er interaktiviteten kun basert på museklikk og
-          hover innenfor hele kunstverket. Jeg kunne ha funnet musens posisjon ved klikk for å gjøre det likere
-          SVG-kunstverket, men jeg følte at kunstverkenes nåværende tilstand godt illustrer det jeg oppfatter som
-          hovedforskjellen mellom SVG og Canvas med tanke på dynamikk. I Canvas-kunstverket blir tegningen overskrevet
-          for hver endring, mens SVG-elementene endres i SVG-kunstverket.</p>
-      </div>
-      <div class="textBox">
-        <h4>jQuery</h4>
-        <p>Jeg brukte jQuery for å oppdage om musepekerens posisjon glir over et av kunstverkene, og for å oppdage
-          museklikk på kunstverkene. Dette utløser endringer på kunstverkene avhengig av hvilken handling som ble
-          utført. For eksempel fører klikk på en av SVG-kunstverdets tenner til at de faller av. Jeg brukte også jQuery
-          for å endre på attributter til SVG-elementer, som endring av øyestørrelse og rotasjon av øyebryn ved klikk.
-        </p>
-      </div>
-      <div class="textBox">
-        <h4>Testing</h4>
-        <p>Nettsiden min og dens funksjonaliteter har blitt testet i følgende nettlesere:</p>
-        <ul>
-          <li>Google Chrome</li>
-          <li>Microsoft Edge</li>
-          <li>Opera</li>
-          <li>Internet Explorer</li>
-        </ul>
-        <p>Testene er utført for å sjekke at nettiden fungerer på andre nettlesere enn den jeg brukte under
-          produksjonen, og at den ikke har noen bugs spesifikt for enkelte nettlesere. Nettsiden som
-          helhet og kunstverkene, samt interaksjoner, ser ut til å fungere helt fint på alle de testede
-          nettleserne. For å bekrefte dette har jeg prøvd å utføre alle mulige handlinger på alle nettleserne. I tillegg
-          har jeg minket og utvidet skjermstørrelsen for å bekrefte at flexbox og tilhørende funksjonaliteter fungerer
-          som de skal.</p>
-      </div>
-      <div class="textBox">
-        <h4>Informasjonskilder</h4>
-        <p>Jeg har benyttet meg av følgende kilder under produksjonen av nettisden: </p>
-        <ul>
-          <li>Canvas: <a
-              href="https://www.youtube.com/watch?v=EO6OkltgudE">https://www.youtube.com/watch?v=EO6OkltgudE</a>
-          </li>
-          <li>SVG: <a
-              href="https://www.w3schools.com/graphics/svg_intro.asp">https://www.w3schools.com/graphics/svg_intro.asp</a>
-          </li>
-          <li>jQuery: <a href="https://forum.jquery.com/">https://forum.jquery.com/</a></li>
-          <li>CSS Flexbox: <a
-              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
-          </li>
-          <li>CSS Grid: <a
-              href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>
-          </li>
-          <li>Tips og spørsmål: <a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
-        </ul>
-        <p>Jeg brukte for det meste kjente nettsider for å lære om temaene, bortsett fra en youtube-spilleliste for å
-          lære om Canvas. Her så jeg på de to-tre første videoene, og supplementerte med StackOverflow de gangene det
-          var nødvendig. Nettsider som jeg kun brukte under læring, men ikke under produksjonen av nettiden, er også
-          inkludert. </p>
-        <p>Jeg har ikke ikke fått inspirasjon i den grad at jeg behøver å liste opp kilder for gjenbruk
-          av kodesnutter. Eksempelvis StackOverflow har kun gitt meg tips og svar på spørsmål.</p>
+    <div id="buttonWrapper">
+      <button id="button">Dokumentasjon</button>
+    </div>
+    <div id="documentation">
+      <div class="container">
+        <div class="textBox">
+          <h4>Flexbox</h4>
+          <p>Jeg valgte å bruke Flexbox-layout istedenfor CSS-Grid. Flexbox gjør det lett for nettsiden å være
+            responsiv på enhver skjermstørrelse. På mindre enheter vil elementer i en flexbox
+            tilpasse seg ved å legge seg
+            under hverandre dersom det ikke lenger er plass i bredden. I tillegg vil elementenes størrelse kunne variere
+            avhengig av ledig plass. CSS-Grid er noe mer statisk når det kommer til variasjon av boksstørrelse. Jeg har
+            brukt flexbox både for å plassere
+            kunstverkene, og boksene med dokumentasjon. Størrelsevariasjonen utnyttes kun i boksene med dokumentasjon.
+          </p>
+        </div>
+        <div class="textBox">
+          <h4>SVG og Canvas</h4>
+          <p>Jeg har brukt SVG og HTML5 Canvas for å tegne den interaktive kunsten. SVG er for det meste skrevet rett
+            inn
+            i HTML-dokumentet, mens hele Canvas-tegningen blir tegnet i main. Det lettere å respondere på spesifikke
+            handlinger - som click på en figur - med SVG enn med Canvas. Derfor er også interaktiviteten bedre tilpasset
+            på kunstverket som benytter seg av SVG. På Canvas-kunstverket er interaktiviteten kun basert på museklikk og
+            hover innenfor hele kunstverket. Jeg kunne ha funnet musens posisjon ved klikk for å gjøre det likere
+            SVG-kunstverket, men jeg følte at kunstverkenes nåværende tilstand godt illustrer det jeg oppfatter som
+            hovedforskjellen mellom SVG og Canvas med tanke på dynamikk. I Canvas-kunstverket blir tegningen overskrevet
+            for hver endring, mens SVG-elementene endres i SVG-kunstverket.</p>
+        </div>
+        <div class="textBox">
+          <h4>jQuery</h4>
+          <p>Jeg brukte jQuery for å oppdage om musepekerens posisjon glir over et av kunstverkene, og for å oppdage
+            museklikk på kunstverkene. Dette utløser endringer på kunstverkene avhengig av hvilken handling som ble
+            utført. For eksempel fører klikk på en av SVG-kunstverdets tenner til at de faller av. Jeg brukte også
+            jQuery
+            for å endre på attributter til SVG-elementer, som endring av øyestørrelse og rotasjon av øyebryn ved klikk.
+          </p>
+        </div>
+        <div class="textBox">
+          <h4>Testing</h4>
+          <p>Nettsiden min og dens funksjonaliteter har blitt testet i følgende nettlesere:</p>
+          <ul>
+            <li>Google Chrome</li>
+            <li>Microsoft Edge</li>
+            <li>Opera</li>
+            <li>Internet Explorer</li>
+          </ul>
+          <p>Testene er utført for å sjekke at nettiden fungerer på andre nettlesere enn den jeg brukte under
+            produksjonen, og at den ikke har noen bugs spesifikt for enkelte nettlesere. Nettsiden som
+            helhet og kunstverkene, samt interaksjoner, ser ut til å fungere helt fint på alle de testede
+            nettleserne. For å bekrefte dette har jeg prøvd å utføre alle mulige handlinger på alle nettleserne. I
+            tillegg
+            har jeg minket og utvidet skjermstørrelsen for å bekrefte at flexbox og tilhørende funksjonaliteter fungerer
+            som de skal.</p>
+        </div>
+        <div class="textBox">
+          <h4>Informasjonskilder</h4>
+          <p>Jeg har benyttet meg av følgende kilder under produksjonen av nettisden: </p>
+          <ul>
+            <li>Canvas: <a
+                href="https://www.youtube.com/watch?v=EO6OkltgudE">https://www.youtube.com/watch?v=EO6OkltgudE</a>
+            </li>
+            <li>SVG: <a
+                href="https://www.w3schools.com/graphics/svg_intro.asp">https://www.w3schools.com/graphics/svg_intro.asp</a>
+            </li>
+            <li>jQuery: <a href="https://forum.jquery.com/">https://forum.jquery.com/</a></li>
+            <li>CSS Flexbox: <a
+                href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
+            </li>
+            <li>CSS Grid: <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>
+            </li>
+            <li>Tips og spørsmål: <a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
+          </ul>
+          <p>Jeg brukte for det meste kjente nettsider for å lære om temaene, bortsett fra en youtube-spilleliste for å
+            lære om Canvas. Her så jeg på de to-tre første videoene, og supplementerte med StackOverflow de gangene det
+            var nødvendig. Nettsider som jeg kun brukte under læring, men ikke under produksjonen av nettiden, er også
+            inkludert. </p>
+          <p>Jeg har ikke ikke fått inspirasjon i den grad at jeg behøver å liste opp kilder for gjenbruk
+            av kodesnutter. Eksempelvis StackOverflow har kun gitt meg tips og svar på spørsmål.</p>
+        </div>
       </div>
     </div>
   </div>
