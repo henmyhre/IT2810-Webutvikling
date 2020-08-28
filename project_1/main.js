@@ -123,16 +123,17 @@ const rotateSvgRightEyebrow = (eyebrow) => {
 const addSvgPipe = () => {
   svgPipeActive = true;
   var pipe = document.createElementNS("http://www.w3.org/2000/svg", 'polygon');
-  pipe.setAttribute("points", "230,-155 350,-135 350,-155 370,-155 370,-120 350,-120");
-  pipe.setAttribute("id", "svgPipe");
+  $(pipe).attr("points", "230,-155 350,-135 350,-155 370,-155 370,-120 350,-120");
+  $(pipe).attr("id", "svgPipe");
+  $(pipe).attr("id", "svgPipe");
   pipe.style.fill = "#c46404";
   pipe.style.stroke = 'black';
   pipe.style.strokeWidth = "5px";
   var motionElem = document.createElementNS("http://www.w3.org/2000/svg", 'animateMotion');
-  motionElem.setAttribute("dur", "5s");
-  motionElem.setAttribute("begin", "0s");
-  motionElem.setAttribute("path", "M 50 100 V 490");
-  motionElem.setAttribute("fill", "freeze");
+  $(motionElem).attr("dur", "5s");
+  $(motionElem).attr("begin", "0s");
+  $(motionElem).attr("path", "M 50 100 V 490");
+  $(motionElem).attr("fill", "freeze");
   pipe.appendChild(motionElem)
   svg.appendChild(pipe);
 }
@@ -162,7 +163,7 @@ $(document).ready(() => {
   });
 
   $("#canvasBox").mouseenter(function () {
-    $(this).attr("style", "background-color: rgb(40, 40, 40);")
+    this.style.backgroundColor = "rgb(40, 40, 40)";
   });
 
   $("#canvasBox").mouseleave(function () {
@@ -170,7 +171,7 @@ $(document).ready(() => {
   });
 
   $("#svg").mouseenter(function () {
-    $(this).attr("style", "background-color: rgb(40, 40, 40);")
+    this.style.backgroundColor = "rgb(40, 40, 40)";
   });
 
   $("#svg").mouseleave(function () {

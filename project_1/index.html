@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <title>IT2810 prosjekt 1</title>
 </head>
 
 <body>
   <h1>IT2810 Webutvikling - Prosjekt 1</h1>
   <h3>Kunstner: Trond Aalberg</h3>
-  <p id="artistInfo">Trond Aalberg er førsteamanuensis på NTNU og tilhøerer instituttet for datateknologi og
+  <p id="artInfo">Trond Aalberg er førsteamanuensis på NTNU og tilhører instituttet for datateknologi og
     informatikk. Ved første øyekast ser han nokså uskyldig og snill ut, men Aalberg har flere sider enn de han viser på
     NTNU. I disse avslørende kunstverkene prøver han å gi uttrykk for nettopp denne splittede personligheten. Ved å
     klikke på kunstverkene vil man kunne se Aalberg slik han er utenfor NTNUs åpningstider. Bildet til høyre har
@@ -20,6 +21,15 @@
     selv: Hvem er egentlig Aalberg? Er
     han en mentalt forstyrret mann uten tenner, en rolig og kul deltidsrøyker, eller
     en snill førsteamanuensis?</p>
+  <br />
+  <h3>Instruksjoner:</h3>
+  <p id="artInfo">Realberg er den egentlige (real) Trond Aalberg. Han er ikke stolt av røykinga og skjuler derfor sin
+    identitet med solbriller. I tillegg er det ønskelig å holde lyset av under
+    røykinga, men det står tilskueren fritt til å bestemme selv.
+    <br />Badberg er en potensiell fremtidig versjon av Trond Aalberg som er mentalt ustabil, og dårlig helse har ført
+    til dårlige tenner. Heldigvis har NTNU betalt godt, så han har råd
+    til nye tenner. Tennene, øynene og hans høyre øyebryn er interagerbart. I tillegg liker han å ta seg noen drag i
+    pipa både i lys og mørke.</p>
   <div class="container">
     <div>
       <h2>Realberg (Canvas)</h2>
@@ -53,9 +63,10 @@
             responsiv på enhver skjermstørrelse. På mindre enheter vil elementer i en flexbox
             tilpasse seg ved å legge seg
             under hverandre dersom det ikke lenger er plass i bredden. I tillegg vil elementenes størrelse kunne variere
-            avhengig av ledig plass. CSS-Grid er noe mer statisk når det kommer til variasjon av boksstørrelse. Jeg har
+            avhengig av ledig plass. CSS-Grid er noe mer statisk når det kommer til variasjon av størrelser. Jeg har
             brukt flexbox både for å plassere
-            kunstverkene, og boksene med dokumentasjon. Størrelsevariasjonen utnyttes kun i boksene med dokumentasjon.
+            kunstverkene, og boksene med dokumentasjon. Størrelsevariasjonen hos elementer i en flexbox utnyttes kun i
+            boksene med dokumentasjon.
           </p>
         </div>
         <div class="textBox">
@@ -76,17 +87,20 @@
             museklikk på kunstverkene. Dette utløser endringer på kunstverkene avhengig av hvilken handling som ble
             utført. For eksempel fører klikk på en av SVG-kunstverdets tenner til at de faller av. Jeg brukte også
             jQuery
-            for å endre på attributter til SVG-elementer, som endring av øyestørrelse og rotasjon av øyebryn ved klikk.
+            for å endre på en del element-attributter, som for eksempel endring av øyestørrelse og rotasjon av øyebryn
+            ved klikk. Jeg brukte det ikke hele tiden under re-styling av elementer, fordi jeg synes det så renere ut
+            med
+            elem.style.xxx enn å legge til lange strenger til style-attributtet.
           </p>
         </div>
         <div class="textBox">
           <h4>Testing</h4>
           <p>Nettsiden min og dens funksjonaliteter har blitt testet i følgende nettlesere:</p>
           <ul>
-            <li>Google Chrome</li>
             <li>Microsoft Edge</li>
+            <li>Google Chrome</li>
+            <li>Mozilla Firefox</li>
             <li>Opera</li>
-            <li>Internet Explorer</li>
           </ul>
           <p>Testene er utført for å sjekke at nettiden fungerer på andre nettlesere enn den jeg brukte under
             produksjonen, og at den ikke har noen bugs spesifikt for enkelte nettlesere. Nettsiden som
@@ -98,7 +112,7 @@
         </div>
         <div class="textBox">
           <h4>Informasjonskilder</h4>
-          <p>Jeg har benyttet meg av følgende kilder under produksjonen av nettisden: </p>
+          <p>Jeg har hovedsaklig benyttet meg av følgende kilder under produksjonen av nettisden: </p>
           <ul>
             <li>Canvas: <a
                 href="https://www.youtube.com/watch?v=EO6OkltgudE">https://www.youtube.com/watch?v=EO6OkltgudE</a>
